@@ -1,13 +1,12 @@
-# 🚢 Astucia Naval
+🚢 Astucia Naval
 
-Juego clásico de estrategia naval implementado en C++, con soporte para:
+Juego de estrategia naval implementado en C++, con soporte para:
 - Guardar y cargar partidas se guarda en `partida.dat`
 - Historial de disparos
-- Representación visual en consola con colores ANSI
 - Sistema de turnos entre dos jugadores
 
 
-## 📂 Estructura del proyecto
+📂 Estructura del proyecto
 ```
 AstuciaNaval/
 │── main.cpp              # Punto de entrada del programa
@@ -29,7 +28,7 @@ AstuciaNaval/
 │   └── Diagrama UML.png
 │── build/                # Archivos generados (astucia_naval.exe, .obj)
 │── compilar.bat          # Script de compilación + ejecución
-│── clean.bat             # Script para limpiar build/
+│── clean.bat             # Script para limpiar la carpeta build/
 │── README.md             # Documentación
 ```
 
@@ -57,26 +56,26 @@ Para borrar los archivos compilados (`.obj` y `astucia_naval.exe`):
 
 clean.bat
 
-Esto dejará la carpeta `build/` vacía o la eliminará si no contiene nada más.
+Esto dejará la carpeta `build/` vacía.
 
 ---
 
 ## Cómo jugar
 1. Cada jugador introduce su **nombre**.  
 2. Cada jugador coloca **3 barcos de tamaño 4** 
-   - Los barcos se muestran en verde en tu propio tablero.  
+   - Los barcos se muestran en verde en el tablero propio.  
 3. Los jugadores se turnan para disparar:  
-   - **Impacto**: rojo  
-   - **Agua**: azul  
-   - **Barco hundido**: morado 
-   - **Tus barcos**: verde  
-   - **Áreas no disparadas**: gris  
+   - **Impacto**: se visualiza en color rojo  
+   - **Agua**: se visualiza en color azul  
+   - **Barco hundido**: se visualiza en color morado 
+   - **Tus barcos**: se visualiza en color verde  
+   - **Áreas no disparadas**: se visualiza en color gris  
 4. Gana el primer jugador que hunda todos los barcos enemigos.  
 
 ---
 
 ## 💾 Guardado y carga
 - Después de cada disparo, la partida se guarda en `partida.dat`.  
-- Si ejecutas el programa y existe una partida guardada, se te preguntará si deseas reanudarla.  
+- Si se ejecuta el programa y existe una partida guardada, se preguntará si se desea reanudar la partida guardada en caso de elegir la opcion SI, se preguntara si desea ver el historial de jugadas.  
 
 ---
